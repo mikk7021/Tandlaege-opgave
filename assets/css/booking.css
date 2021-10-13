@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+}
+
+header nav {
+  background-color: #ffffff;
+  padding: 10px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-shadow: 3px 2px 20px 2px #B0B0B0;
+  box-shadow: 3px 2px 20px 2px #B0B0B0;
+  font-family: "Segoe UI";
+}
+
+header nav figure {
+  color: #ffffff;
+}
+
+header nav figure svg {
+  width: 100px;
+  height: 100px;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  color: #000;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  border-bottom: 4px solid #4dafda;
+}
+
+.bookingwrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.bookingwrapper .bookheader {
+  font-family: "Segoe UI";
+  color: #4dafda;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.bookingwrapper .bookingsection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.bookingwrapper .bookingsection .bookingform {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.bookingwrapper .bookingsection .bookingform .blueheader {
+  font-family: "Segoe UI";
+  font-size: 1.5rem;
+  color: #4dafda;
+}
+
+.bookingwrapper .bookingsection .bookingform .inputdate {
+  width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+  border: 2px solid #000;
+  font-family: "Segoe UI";
+  font-size: 2rem;
+}
+
+.bookingwrapper .bookingsection .bookingform .inputdate::-webkit-input-placeholder {
+  text-align: center;
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+}
+
+.bookingwrapper .bookingsection .bookingform .inputdate:-ms-input-placeholder {
+  text-align: center;
+  transform: translateY(-5vh);
+}
+
+.bookingwrapper .bookingsection .bookingform .inputdate::-ms-input-placeholder {
+  text-align: center;
+  transform: translateY(-5vh);
+}
+
+.bookingwrapper .bookingsection .bookingform .inputdate::placeholder {
+  text-align: center;
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+}
+
+.bookingwrapper .bookingsection .bookingform select {
+  width: 100%;
+  height: 48px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  font-family: "Segoe UI";
+  font-size: medium;
+  padding-left: 8px;
+}
+
+.bookingwrapper .bookingsection .bookingform #inputcontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.bookingwrapper .bookingsection .bookingform #inputcontainer input {
+  height: 48px;
+  height: 48px;
+  font-size: "Segoe UI";
+  font-size: medium;
+  border-radius: 15px;
+  padding-left: 8px;
+  border: 2px solid #000;
+}
+
+.bookingwrapper .bookingsection .bookingform .errorwrapper {
+  font-family: "Segoe UI";
+  font-size: medium;
+  color: #000;
+}
+
+.bookingwrapper .bookingsection .bookingform .remindtext {
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.bookingwrapper .bookingsection .bookingform .checkbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  border: 2px solid #000;
+}
+
+.bookingwrapper .bookingsection .bookingform .checkbox label {
+  font-family: "Segoe UI";
+  font-size: medium;
+  padding-left: 8px;
+}
+
+.bookingwrapper .bookingsection .bookingform .checkbox .mail {
+  width: 100%;
+  height: 2vh;
+  margin: auto;
+}
+
+.bookingwrapper .bookingsection .bookingform .checkbox .sms {
+  width: 100%;
+  height: 2vh;
+  margin: auto;
+}
+
+.bookingwrapper .bookingsection .bookingform button {
+  width: 100%;
+  border-radius: 15px;
+  height: 48px;
+  border: 2px solid #000;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bookingwrapper .bookingsection .bookingform .redirecttext {
+  font-family: "Segoe UI";
+  text-align: center;
+  font-size: 1rem;
+}
+
+.bookingwrapper .bookingsection .infoarticle {
+  width: 90%;
+  margin: auto;
+}
+
+.bookingwrapper .bookingsection .infoarticle .infoheader {
+  font-family: "Segoe UI";
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bookingwrapper .bookingsection .infoarticle ::marker {
+  font-size: 2rem;
+}
+
+.bookingwrapper .bookingsection .infoarticle .bulletpoint {
+  list-style: disc;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Segoe UI";
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+.bookingwrapper .bookingsection .infoarticle .greytext {
+  font-family: "Segoe UI";
+  font-size: 1.3rem;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+footer {
+  margin-top: 2%;
+  font-family: "Segoe UI";
+}
+
+footer #oversection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  padding: 100px 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #oversection #socialMediaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #oversection #socialMediaIcons figure {
+  width: 30%;
+}
+
+footer #oversection #socialMediaIcons figure img {
+  width: 100%;
+}
+
+footer #oversection .footerText h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
+}
+
+footer #oversection .footerText p {
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+footer #oversection .footerText a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer #oversection .footerText div {
+  margin-bottom: 3%;
+  -webkit-text-decoration: underline #ffffff;
+          text-decoration: underline #ffffff;
+  text-underline-offset: 3px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer #undersection {
+  background-color: #707070;
+  padding: 40px 0px;
+}
+
+footer #undersection p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .bookingwrapper .bookheader {
+    font-family: "Segoe UI";
+    font-size: 2.5rem;
+    color: #4dafda;
+  }
+  .bookingwrapper .bookingsection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=booking.css.map */

@@ -1,0 +1,279 @@
+
+@import "helpers/variables";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+  height: 100%;
+  width: 100%;
+  nav {
+    background-color: $white;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    -webkit-box-shadow: 3px 2px 20px 2px #B0B0B0;
+    box-shadow: 3px 2px 20px 2px #B0B0B0;
+    font-family: $font-primary;
+    figure {
+      color: $white;
+
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    ul {
+      li {
+        display: inline;
+        margin-left: 100px;
+        font-size: 20px;
+        a {
+          color: $black;
+          letter-spacing: 3px;
+          text-decoration:none;
+        }
+
+        a:hover {
+          border-bottom: 4px solid $blue;
+        }
+      }
+    }
+  }
+}
+
+.bookingwrapper {
+  width: 80%;
+  margin: auto;
+  .bookheader {
+    font-family: $font-primary;
+    color: $blue;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 400;
+  }
+  .bookingsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    .bookingform {
+      display:grid;
+      gap:16px;
+      width: 90%;
+      margin: auto;
+      margin-top: 4%;
+      
+      .blueheader {
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        color: $blue;
+        
+      }
+      .inputdate {
+        width: 100%;
+        height: 20vh;
+        border-radius: 15px;
+        border: 2px solid $black;
+        font-family: $font-primary;
+        font-size: 2rem;
+      }
+      .inputdate::placeholder{
+        text-align: center;
+        transform: translateY(-5vh);
+      }
+      select {
+        width: 100%;
+        height: 48px;
+        border-radius: 15px;
+        border: 2px solid $black;
+        font-family: $font-primary;
+        font-size: medium;
+        padding-left:8px;
+      }
+
+      #inputcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        input {
+          height:48px;
+          height: 48px;
+          font-size: $font-primary;
+          font-size: medium;
+          border-radius: 15px;
+          padding-left:8px;
+          border: 2px solid $black;
+        }
+      }
+      .errorwrapper {
+        font-family: $font-primary;
+        font-size: medium;
+        color: $black;
+      }
+      .remindtext {
+        font-family: $font-primary;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        color: $black;
+      }
+     .checkbox {
+       display: grid;
+       grid-template-columns: 90% 10%;
+       border-radius: 15px;
+       align-items: center;
+       height: 48px;
+       border: 2px solid $black;
+      // margin-bottom: 4%;
+       label {
+        font-family: $font-primary;
+        font-size: medium;
+        padding-left:8px;
+       }
+       .mail {
+        width: 100%;
+        height: 2vh;
+        margin: auto;
+       }
+       .sms {
+        width: 100%;
+        height: 2vh;
+        margin: auto;
+       }
+     }
+     button {
+       width: 100%;
+       border-radius: 15px;
+       height: 48px;
+       border: 2px solid $black;
+       font-size: 1.5rem;
+       background-color: transparent;
+       cursor: pointer;
+     }
+     .redirecttext {
+       font-family: $font-primary;
+       text-align: center;
+       font-size: 1rem;
+     }
+      }
+      .infoarticle {
+        width: 90%;
+        margin: auto;
+        .infoheader {
+          font-family: $font-primary;
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+          ::marker {
+            font-size: 2rem;
+            
+          }
+
+          .bulletpoint {
+            list-style: disc;
+            line-height: 1.5;
+            text-align: center;
+            font-family: $font-primary;
+            color: $black;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 4%;
+          }
+        
+        .greytext {
+          font-family: $font-primary;
+          font-size: 1.3rem;
+          text-align: center;
+          color: $lightgrey;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 2%;
+    font-family: $font-primary;
+    #oversection {
+      display: flex;
+      justify-content: space-between;
+      background-color: $lightgrey;
+      color: $white;
+      padding: 100px 150px;
+      align-items: center;
+  
+      #socialMediaIcons {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        justify-content: center;
+  
+        figure {
+          width: 30%;
+  
+          img {
+            width: 100%;
+          }
+        }
+      }
+  
+      .footerText {
+        h3 {
+          font-size: 25px;
+          letter-spacing: 2px;
+          margin-bottom: 5%;
+        }
+  
+        p {
+          font-size: 20px;
+          margin-bottom: 3%;
+        }
+  
+        a {
+          color: $white;
+          font-size: 20px;
+        }
+  
+        div {
+          margin-bottom: 3%;
+          text-decoration: underline $white;
+          text-underline-offset: 3px;
+          color: $white;
+          font-size: 20px;
+        }
+      }
+    }
+  
+    #undersection {
+      background-color: $darkgrey;
+      padding: 40px 0px;
+  
+      p {
+        text-align: center;
+        color: $white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .bookingwrapper {
+      .bookheader {
+        font-family: $font-primary;
+        font-size: 2.5rem;
+        color: $blue;
+        
+      }
+      .bookingsection {
+        grid-template-columns: 1fr;
+      }
+
+    }
+  }
