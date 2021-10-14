@@ -12,7 +12,7 @@ let inputdate = document.getElementById('inputdate')
 let number = document.getElementById('number')
 
 
-
+//Kører function validate onclick som checker om inputs enten er tomme eller ikke har en gyldig længde/syntaks og herefter sætter en fejlbesked.
 function validate () {
 
     
